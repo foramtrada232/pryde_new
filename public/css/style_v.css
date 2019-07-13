@@ -1,0 +1,3172 @@
+/*videoConsultation page start*/
+/*Specialities section*/
+.speciality{
+	background: url(../images/pediatrics-top1.jpg);
+	background-size: cover;
+	border-bottom: 1px solid #dddddd; 
+}
+.speciality_opac{
+	background: rgba(255,255,255,0.9); 
+}
+.speciality .page_title h1{
+	font-size: 26px;
+	font-weight: 400;
+	display: inline-block;
+	line-height: 34px;
+	padding: 25px 0px;
+	letter-spacing: 1px;
+}
+.spec_btn{
+	display: inline-block;
+	float: right;
+	margin-top: -60px;
+	color: #299fd9 !important;
+	border: 1px solid #299fd9;
+	padding: 5px 12px;
+}
+.spec_div{
+	/*padding-bottom: 66px;*/
+	display: none;
+}
+a.spec_links{
+	height: 150px;
+	width: 100%;
+	border: 1px solid #bdbdbd;
+	color: white;
+	margin-top: 30px;
+	padding: 15px;
+	background: white;
+}
+a.spec_links:hover{
+	border-color: #0c4e93;
+}
+.spec_links img{
+	margin: 12px;
+	text-align: center;
+	filter: grayscale(100%) brightness(120%);
+}
+a.spec_links:hover img{
+	filter: none;
+}
+.spec_links p{
+	text-align: center;
+	width: 100%;
+	color: #222;
+}
+a.spec_links:hover p{
+	color: #0c4e93;
+}
+/*video consultation form*/
+.video_consult_form{
+	border-bottom: 1px solid #dddddd;
+	padding: 51px 0px 33px;
+}
+.video_consult_form .page_title{
+	margin-bottom: 26px;
+}
+.video_consult_form .page_title h1{
+	font-size: 26px;
+}
+/* .form-control{
+	border: 1px solid #d6d6d6;
+	padding: 10px 15px;
+	border-radius: 0px;
+	font-size: 14px;
+	color: #222;
+	width: 100%;
+	height: 40px;
+	box-shadow: none !important;
+} */
+.input_with_icont .form-control{
+	padding-left: 50px;
+}
+.input_with_icont{
+	position: relative;
+}
+.input_with_icont img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 13px;
+	margin: auto;
+}
+.input_with_icont:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 40px;
+	margin: auto;
+	background-color: #d6d6d6;
+	height: 25px;
+	width: 1px;
+}
+.ui-datepicker .ui-datepicker-next span.ui-icon {
+    background-image: url(../images/downArrow.png) !important;
+    background-position: center !important;
+    transform: rotate(-90deg);
+    background-size: 50% 40%;
+}
+.ui-datepicker .ui-datepicker-prev span.ui-icon {
+    background-image: url(../images/downArrow.png) !important;
+    background-position: center !important;
+    transform: rotate(90deg);
+    background-size: 50% 40%;
+}
+/*for radio button*/
+.form-check{
+	text-align: center;
+}
+input[type=radio] {
+    display:none;
+}
+input[type=radio] + label {
+    display:inline-block;
+    padding: 9px 15px;
+    background-color: white;
+	border:1px solid #d6d6d6;
+    width: 100%;
+    font-size: 14px;
+    color: #858889; 
+	cursor: pointer;
+	
+}
+/* input[type=radio]:checked + label { 
+    background-color:#0c4e93;
+    border-color: #0c4e93 !important;
+    color: white;
+    width: 100%;
+} */
+/*select button*/
+select#doctor_select{
+	color: black;
+	font-weight: 300;
+}
+
+/*pick date*/
+.pick_date_time{
+		border-bottom: 1px solid #dddddd;
+}
+.pick_date_time .page-title{
+	font-size: 12px;
+	font-weight: 300;
+}
+.page-title{
+	display: inline-block;
+	float: left;
+}
+.page_link{
+	float: right;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: -25px;
+	color: #008cd2;
+}
+.main{
+	width: 100%;
+}
+.date_heading{
+	padding: 15px 0px;
+	margin-top: 25px;
+	margin-bottom: 12px; 
+}
+.pick_date_time .form-check{
+	width: 145px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	padding-left: 0px !important;
+	padding-bottom: 0px !important;
+}
+.pick_date_time .date_div .form-check-label{
+	font-size: 14px;
+	font-weight: 600;
+	color: #797979;
+	margin-top: -4px !important;
+}
+.pick_date_time input[type=radio] {
+    display:none;
+}
+.pick_date_time input[type=radio] + label {
+    display:inline-block;
+    background-color: white;
+    border:1px solid #b5b7b9;
+    width: 100%;
+    padding: 20px 30px;
+}
+.pick_date_time input[type=radio]:checked + label { 
+    background-color:white;
+    border:1px solid #0c4e93;
+    width: 100%;
+}
+/*pick time*/
+.time_radio_btn{
+	margin-top: 23px;
+	margin-bottom: 45px;
+}
+.time_heading{
+	margin-top: 44px;
+	margin-bottom: 23px;
+}
+.time_radio_btn .form-check{
+	width: 145px;
+}
+.time_radio_btn input[type=radio] {
+    display:none;
+}
+.time_radio_btn input[type=radio] + label {
+    display:inline-block;
+    background-color: white;
+    padding: 22px 3px;
+    font-size: 17px;
+    border-color: #b5b7b9;
+    width: 100%;
+}
+.time_radio_btn input[type=radio]:checked + label { 
+    background-color:white;
+    border:1px solid #0c4e93;
+    color: black;
+    width: 100%;
+}
+/*terms and conditon*/
+.terms_condition .form-check{
+	float: left;
+	font-size: 16px;
+	font-weight: 300;
+	border: none;
+	margin-bottom: 22px;
+	text-align: left;
+}
+.terms_condition{
+	margin-top: 50px;
+}
+.terms_condition .form-check a{
+	font-weight: 600;
+	color: #008cd2;
+}
+.terms_condition .form-check-input{
+  display: none;
+}
+.terms_condition input[type=checkbox] + label {
+    padding-left: 35px;
+    position: relative;
+    top: -5px;
+}
+.terms_condition input[type=checkbox] + label::before {
+    content: "";
+    position: absolute;
+    background: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-position: -50px 0px;
+    height: 25px;
+    width: 25px;
+    left: -5px;
+}
+.terms_condition input[type=checkbox]:checked + label::before{
+	background-position: 0px 0px;
+}
+.submit_btn button{
+	border: 2px solid #0c4e93;
+    background-color: white;
+    border-radius: 0px;
+    padding: 14px 32px;
+    color: #0c4e93;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.submit_btn button:hover{
+	background: #0c4e93;
+	color: white; 
+}
+/*Doctor consultation doctor list page css start*/
+.section_title h2{
+	font-size: 26px;
+	font-weight: 400;
+	display: inline-block;
+	line-height: 34px;
+	position: relative;
+}
+.section_title h2 img{
+	margin-left: 15px;
+}
+.doctor_blue{
+	color: #0c4e93;
+}
+.dermatology hr{
+	margin:40px 0px;
+}
+.dermatology_doctor_detail {
+    margin-top: 51px;
+    padding-bottom: 30px;
+}
+.dermatology{
+	padding: 40px 0px 50px;
+}
+.dermatology_info{
+	height: 100%;
+	border: 1px solid #dddddd;
+	color: white;
+	margin-top: 15px;
+	padding: 12px;
+	position: relative;
+}
+.derma_box{
+	padding: 10px 15px;
+}
+.dermatology_info img {
+    margin: 10px auto;
+}
+.dermatology_info p {
+	text-align: center;
+	width: 100%;
+	color: black;
+	font-weight: 400;
+}
+.doctor_image{
+	width: 100%;
+	height: 360px;
+	overflow: hidden;
+}
+.doctor_image img{
+	max-width: 100%;
+	max-height: 100%;
+	min-width: 100%;
+	object-fit: cover;
+}
+.doctor_name{
+	line-height: 33px;
+}
+.doctor_name h4{
+	font-weight: 700;
+	border-left: 2px solid #0c4e93;
+	padding: 0px 20px
+}
+.doctor_name p{
+	padding: 0px 24px;
+}
+.doctor_overview{
+	line-height: 33px;
+}
+.doctor_overview h6{
+	color: #222222;
+	font-size: 20px;
+	margin-top: 20px;
+}
+.doctor_overview p{
+	color: #757575;
+}
+.doctor_details button {
+    border: 2px solid #0c4e93;
+    color: #0c4e93;
+    padding: 15px 50px;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+.doctor_details button:hover{
+	background: #0c4e93;
+	color: white;
+}
+.doctor_consult{
+	padding: 10px 30px;
+}
+.doctor_consult strike{
+	font-size: 24px;
+}
+.blue_price{
+	color: #008cd2;
+	font-size: 30px;
+}
+.gray_save{
+	color: #757575;
+	font-size: 16px;
+}
+/*Physiotherapy page start here*/
+/*tab part start*/
+.physio_tab_part{
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 45px; 
+}
+.nav-tabs{
+	text-transform: uppercase;
+	font-size: 18px;
+	display: flex;
+  	justify-content: center;
+  	font-weight: 400;
+}
+.physio_tab_part .nav-tabs li .active{
+	border-bottom: 3px solid #0c4e93;
+	color: black;
+	font-weight: 400;
+}
+.nav-tabs li a{
+	color: #858889;
+	font-size: 20px;
+	padding: 27px 30px 10px;
+	margin-top: 23px;
+}
+.tab_heading1{
+	margin-top: 10px;
+	color: black;
+	font-weight: 600;
+}
+.tab_box{
+	width: 100%;
+	padding: 23px 13px;
+	margin-bottom: 20px;
+}
+.tab_main_box a{
+	border:1px solid #d6d6d6;
+	width: 100%;
+	height: 155px;	
+}
+.physio_tab_part .tab-content a:hover{
+	border-color: #0c4e93;
+}
+.physio_tab_part .tab-content a:hover .tab_heading,
+.physio_tab_part .tab-content a:hover .tab_heading1
+{
+	color: #0c4e93;
+}
+/*.tab_box:hover{
+	border-color: #0c4e93;  
+}*/
+.tab_box_img{
+	padding-left: 12px;
+}
+.tab_box img{
+	filter: grayscale(100%) brightness(120%);
+}
+.tab_box:hover img{
+	filter: none;
+}
+.tab_heading{
+	font-size: 16px;
+	padding-top: 10px;
+	color: #222;
+	font-weight: 600;
+}
+a.tab_box:hover .tab_heading{
+	color: #0c4e93;  
+}
+.tab-content{
+	margin-top: 35px;
+}
+/*popular with pride start*/
+.popular_pride{
+	background: url(../images/pediatrics-top1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+ 	background-position: center;
+  	background-repeat: no-repeat;
+	border-bottom: 1px solid #dddddd;
+}
+.popular_pride_back{
+	background: rgba(255,255,255,0.85);
+	padding-bottom: 55px;
+}
+.popular_pride .page_title h1{
+	margin-top: 67px;
+    margin-bottom: 19px;
+    color: black !important;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.pride_box{
+	border-top: 2px solid #0c4e93;
+	background: white;
+	padding: 40px 35px 30px;
+	height: 100%;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+}
+.pride_box_div{
+	padding: 15px;
+}
+.pride_heading{
+	margin-top: 19px;
+	color: black;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.pride_heading1{
+	color: black;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.pride_price{
+	margin-top: 10px;
+}
+.pride_price_value{
+	font-size: 30px;
+	color: #008cd2;
+	margin-left: -5px;
+}
+.pride_price strike{
+	font-size: 24px;
+	padding-right: 30px;
+	margin-top: 8px;
+	margin-right: -5px;
+}
+.pride_btn{
+	margin-top: 8px;
+}
+.pride_btn button{
+	border:2px solid #0c4e93;
+	padding: 15px 20px;
+	width: 100%;
+	font-size: 20px;
+	background-color: white;
+	color: #0c4e93;
+	font-weight: 600;
+	box-shadow: none;
+	border-radius: 0px;
+}
+.pride_btn button:hover{
+	background: #0c4e93;
+	color: white; 
+}
+/*how it works starts*/
+.how_it_works_part .page_title h1{
+	margin-top: 64px;
+	margin-bottom: 22px;
+	font-size: 26px;
+	font-weight: 600;
+}
+.how_works_content{
+	/*width: 100%;*/
+	font-size: 16px;
+	line-height: 2;
+	margin-bottom: 65px;
+}
+/*nursing page starts here*/
+/*nursing*/
+.nursing_part .page_title h1{
+	margin-top: 50px;
+	margin-bottom: 39px;
+}
+.nursing_part{
+ padding-bottom: 45px;
+}
+
+.popular_nurse_part .pride_box{
+	padding: 20px;
+}
+.popular_nurse_part .pride_heading{
+	font-size: 17px;
+	color: #222;
+}
+.tab_sub_head{
+	margin-top: 10px;
+}
+.popular_nurse_part .pride_heading1{
+	font-size: 18px;
+	color: #222;
+	width: 69%;
+	margin-top: 25px;
+	margin-left: 18%;
+	line-height: 1.3;
+}
+.popular_nurse_part .pride_btn{
+	margin-top: 15px;
+}
+.popular_nurse_part .pride_btn button{
+	padding: 0px 20px;
+}
+/*features section starts*/
+.feature_box{
+	border:1px solid #dddddd;
+	padding: 40px 20px 30px;
+	height: 100%;
+}
+@media screen and (max-width: 991px){
+	.feature_box{
+		margin: 20px;
+}
+}
+.features_part .page_title h1{
+	margin-top: 65px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.feature_part1{
+	margin-top: 30px;
+}
+.feature_heading{
+	font-size: 22px;
+	font-weight: 600;
+	color: black;
+	margin-top: 20px;
+}
+hr{
+	margin-top: -1px;
+}
+.feature_content{
+	font-size: 16px;
+    padding: 10px 10px 15px;
+    line-height: 1.9;
+}
+.feature_box button{
+	border: 2px solid #0c4e93;
+    padding: 15px 47px;
+    background-color: white;
+    color: #0c4e93;
+    font-weight: 600;
+    font-size: 20px;
+    box-shadow: none;
+    border-radius: 0px; 
+}
+.feature_box button:hover{
+	background: #0c4e93;
+	color: white; 
+}
+/*benefits section starts*/
+.benefits_part{
+	background: url(../images/pediatrics-top1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+ 	background-position: center;
+  	background-repeat: no-repeat;
+}
+.benefit_back{
+	background: rgba(0, 24, 49, 0.84);
+	padding-bottom: 60px;
+	margin-top: 60px;
+}
+.benefit_box{
+	padding: 10px;
+}
+.benefit_box_part{
+	border-bottom: 1px solid #dddddd;
+}
+.benefit_box_border{
+	border-right: 1px solid #dddddd;
+}
+.benefits_part .page_title h1{
+	margin-top: 67px !important;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 700;
+}
+@media screen and (max-width: 991px){
+	.benefit_box_border{
+	border-right:none;
+}
+.benefit_box_part{
+	border-bottom:none;
+}
+}
+.benefits_part .page_title h1{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.benefit_img img{
+	border-bottom: 4px solid #0c4e93;
+	padding:13px 0px 25px 0px;
+}
+.benefit_heading{
+	font-size: 18px;
+	font-weight: 600;
+	padding: 15px 50px;
+}
+.benefit_heading1{
+	font-size: 18px;
+	font-weight: 600;
+	padding: 15px 100px;
+}
+.benefit_heading2{
+	font-size: 18px;
+	font-weight: 600;
+	padding: 15px 60px;
+}
+.benefit_heading3{
+	font-size: 18px;
+	font-weight: 600;
+	padding: 15px 10px;
+}
+.benefit_content{
+	font-size: 15px;
+	padding: 0px 10px;
+	margin-bottom: 20px;
+	line-height: 2;
+}
+/*doctor consult page starts here*/
+/*speciality section starts*/
+.speciality_row_1{
+	padding-bottom: 60px;
+}
+.speciality_row{
+	margin-top: 25px;
+}
+.speciality_box_part{
+	border:1px solid #dddddd;
+	width: 100%;
+	padding: 10px;
+	background-color: white;
+}
+.speciality_box_part:hover{
+	border-color: #0c4e93;
+}
+.speciality_box_part img{
+	padding: 10px 25px;
+	/*border-right: 1px solid #0c4e93;*/
+	filter: grayscale(100%) brightness(120%);
+}
+.speciality_box_part:hover img{
+	filter: none;
+}
+.speciality_box_part:hover .speciality_heading{
+	color: #0c4e93; 
+}
+.speciality_box_part:hover .speciality_heading1{
+	color: #0c4e93; 
+}
+.speciality_box_part:hover .main_div_img_border{
+	filter: none; 
+}
+.main_div{
+	width: 100%;
+}
+.main_div_img_border{
+	display: inline-block;
+	float: left;
+	width: 90px;
+	border-right: 1px solid #dddddd;
+	filter: grayscale(50%) brightness(97%);
+}
+.speciality_heading{
+	float: right;
+	padding: 20px;
+	color: black;
+	font-size: 16px;
+	font-weight: 600;
+}
+.speciality_heading1{
+	float: right;
+	padding: 20px 10px 20px 10px;
+	color: black;
+	font-size: 16px;
+	font-weight: 600;
+}
+/*nursing detail page starts here*/
+/*tab part starts*/
+.child_vaccination .page_title h1{
+	margin-top: 50px;
+	font-size: 26px;
+	font-weight: 700;
+}
+.tab_ul_part ul li a{
+	border:1px solid #dddddd;
+	margin: 8px;
+	width: 170px;
+	padding: 32px 12px;
+}
+.tab_ul_part{
+	margin-top: 27px;
+}
+.bcg_tab_heading{
+	font-size: 16px;
+    text-transform: initial;
+    padding-top: 12px;
+    font-weight: 600;
+}
+.child_vaccination .nav-tabs{
+	border-bottom: none;
+}
+.child_vaccination .nav-tabs li .active{
+	border-color: #0c4e93;
+	color: #0c4e93; 
+}
+.child_vaccination .nav-tabs li .active img{
+	filter: none; 
+}
+.tab_ul_part img{
+	filter: grayscale(100%) brightness(120%);
+}
+.tab_content_part span{
+	font-size: 24px;
+	color: black;
+	font-weight: 700;
+}
+.tab_content_part p{
+	line-height: 2;
+}
+.tab_content_part button{
+	border:2px solid #0c4e93;
+	padding: 13px 30px;
+	font-size: 20px;
+	background-color: white;
+	color: #0c4e93;
+	font-weight: 600;
+	box-shadow: none;
+	border-radius: 0px;
+}
+.tab_content_part button:hover{
+	background: #0c4e93;
+	color: white; 
+}
+.tab_part_val{
+	margin-top: 10px;
+	color: #008cd2;
+	font-size: 26px;
+}
+.tab_ul_row{
+	margin-top: 12px;
+	margin-bottom: 102px;
+}
+.tab_ul_part1{
+	border-right: 1px solid #dddddd;
+}
+.tab_ul_recom{
+	margin-left: 137px;
+}
+.tab_ul_heading{
+	font-size: 20px;
+	font-weight: 600;
+	color: black;
+}
+.tab_ul_li{
+	list-style-type: circle;
+	font-size: 20px;
+	padding-left: 22px;
+}
+/*medicine supply page starts here*/
+/*speciality section*/
+.medicine_spec_box{
+	border:1px solid #dddddd;
+	padding: 15px;
+	background: white;
+	width: 100%;
+	height: 100%;
+}
+.medicine_suply .page_title h1{
+	font-size: 26px;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 34px;
+    padding: 51px 0px 22px;
+    letter-spacing: 0px;
+}
+.medicine_heading{
+	/*margin-top: 15px;*/
+	color: #222;
+}
+.medicine_spec_box img{
+	filter: grayscale(100%) brightness(120%);
+	padding: 10px;
+}
+.medicine_spec_box:hover img{
+	filter: none; 
+}
+.medicine_spec_box:hover{
+	border-color: #0c4e93;  
+}
+.medicine_spec_box:hover .medicine_heading{
+	color: #0c4e93;  
+}
+.medicine_row{
+	padding-bottom: 50px;
+}
+.medicine_suply .benefit_heading{
+	color: black;
+}
+.speciality .benefit_heading{
+	color: black;
+}
+/*emotional wellbeing detail page starts*/
+/*dematology section*/
+.emo_well_sec .benefit_box_part2{
+	padding-bottom: 40px;
+}
+.emo_detail_tab .page_title h1{
+	margin-top: 65px !important;
+}
+.emotional_part .tab_ul_part{
+	margin-top: 0px;
+}
+.emotional_part{
+	margin-top: 40px
+}
+.emotional_row{
+	margin-top: 40px;
+}
+.emotional_part .tab_ul_part ul li a{
+	padding: 31px 21px;
+}
+.emotional_part .tab_ul_part ul li a.emotional_box_1{
+	padding: 15px 21px;
+}
+.emo_detail_tab .emotional_img{
+	padding: 5px;
+}
+.emo_detail_tab .doctor_image {
+    height: 325px !important;
+    padding-top: 6px;
+}
+.doctor_details{
+	padding-top: 5px;
+}
+.doc_descr{
+	line-height: 1.5;
+	font-size: 15px;
+	margin-top: 5px;
+}
+.derma_doc{
+	font-size: 20px;
+	color: black;
+}
+.derma_content{
+	font-size: 14px;
+	color: #222;
+	line-height: 2.3;
+}
+.dermo_doc_part{
+	margin-top: 18px;
+}
+.emotional_row .doctor_consult{
+	padding: 10px 0px;
+}
+.doc_fee{
+	color: black;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.emotional_tab_heading{
+	font-size: 24px;
+	color: black;
+}
+.emo_detail_tab .tab-content{
+	margin-top: 5px !important;
+}
+/*radio button section*/
+.emotional_radio_btn{
+	margin-top: 41px;
+	margin-bottom: 71px;
+}
+.emotional_radio{
+	float: left;
+	display: inline-block;
+}
+.emotional_button  button{
+	border:2px solid #0c4e93;
+	padding: 15px 60px;
+	font-size: 18px;
+	background-color: white;
+	color: #0c4e93;
+	font-weight: 600;
+	box-shadow: none;
+	border-radius: 0px;
+	margin-left: 7px;
+}
+.emotional_button  button:hover{
+	background: #0c4e93;
+	color: white; 
+}
+.emotional_radio_btn input[type=radio] + label {
+    padding:18px;
+ }
+/* medicine supply detail list page*/
+/*protinex section*/
+.protinex_part{
+	padding-bottom: 82px;
+	border-bottom: 1px solid #dddddd;
+}
+.protinex_part .page_title h1{
+	margin-top: 52px;
+	margin-bottom: 20px;
+	font-weight: 600;
+	font-size: 26px;
+}
+.protinex_content{
+	line-height: 1.9;
+}
+.protinex_content span{
+	font-size: 26px;
+	color: black;
+}
+.protinex_content_1 span{
+	color: black;
+	font-weight: 600;
+}
+.protinex_content_1{
+	margin-top: 10px;
+	line-height: 1.9;
+}
+.protinex_part  button{
+	border: 2px solid #0c4e93;
+    padding: 14px 55px;
+    background-color: white;
+    color: #0c4e93;
+    font-weight: 600;
+    font-size: 20px;
+    box-shadow: none;
+    border-radius: 0px;
+    margin-top: 10px;
+}
+.protinex_part  button:hover{
+	background: #0c4e93;
+	color: white; 
+}
+.medicine_pop .pride_heading{
+	text-transform: initial;
+}
+/*medicine supply list page starts here.*/
+.page_title h1.page_sub_title{
+	margin: 0px;
+	padding: 50px 0px 20px 0px;
+}
+.page_title h1.page_sub_title1{
+	margin: 0px;
+	padding: 10px 0px 20px 0px;
+}
+#more, #more2, #more3{
+	display: none;
+	font-size: 16px;
+}
+button#myBtn{
+	border:none;
+	box-shadow: none;
+	padding: 0px;
+	margin: 0px;
+	color: #008cd2;
+}
+.protinex_part_list{
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 70px;
+}
+.supply_list .protinex_part_list{
+	padding-bottom: 60px;
+}
+.protinex_border{
+	border-bottom: none;
+	padding-bottom: 20px;
+}
+.supply_list .protinex_border{
+	padding-bottom: 10px;
+}
+.protinex_content button{
+	border:none;
+	box-shadow: none;
+	padding: 0px;
+	margin: 0px;
+	color: #008cd2;
+}
+.protinex_content button:hover{
+	border:none;
+	background: none;
+	color: #008cd2;
+}
+.protinex_content button:focus{
+	outline: none;
+}
+/*doctor consultation version 1 page start here*/
+.doctor_consult_v1 .benefit_box_part2{
+	padding-bottom: 70px;
+}
+.doctor_consult_v1 .benefit_heading{
+	color: #222;
+	padding: 30px 0px;
+}
+.doctor_consult_v1 .benefit_box{
+	padding: 15px;
+}
+.doctor_consult_v1 .page_title h1{
+	padding: 53px 0px;
+}
+.benefit_box_part a:hover .benefit_heading{
+	color: #0c4e93;
+}
+.benefit_box_part2 a:hover .benefit_heading{
+	color: #0c4e93;
+}
+.doctor_consult_v1 .benefit_heading{
+	color: black;
+}
+/*doctor consultation version 3 start here*/
+.doctor_consult_v3 .speciality_heading{
+	text-transform: uppercase;
+}
+.doctor_consult_v3 .speciality_heading1{
+	text-transform: uppercase;
+	padding: 0px 110px;
+	margin-top: -60px;
+}
+.doctor_consult_v3 .main_div_img_border{
+	filter: none;
+}
+.doctor_consult_v3 .main_div_img_border img{
+	filter: grayscale(0%) brightness(210%);
+}
+/*doctor login page start here*/
+.doc_login_form{
+	margin: 70px 0px;
+}
+.form_section{
+	margin: 0 auto;
+	max-width: 430px;
+	padding: 18px 25px 12px;
+	border:1px solid #dddddd;
+}
+.form_heading{
+	text-transform: uppercase;
+	font-size: 22px;
+	padding-bottom: 25px;
+}
+.login_btn{
+	border-bottom: 1px solid #dddddd;
+}
+.doc_login_form button{
+	background-color: #008cd2;
+	width: 100%;
+	color: white;
+	box-shadow: none;
+	margin: 16px 0px 20px 0px;
+	border-radius: 0px;
+}
+.doc_login_form button:hover{
+	background-color: #0c4e93;
+	color: white;
+}
+.forgot_pwd_part a{
+	color: #008cd2;
+}
+.forgot_pwd_part{
+	padding: 15px 0px;
+}
+.forgot_pwd {
+	text-align: center;
+}
+.new_user{
+	color: #0c4e93;
+}
+/*doctor registration page starts here*/
+.form_register_section{
+	margin: 0 auto;
+	max-width: 780px;
+	padding: 18px 25px 12px;
+	border:1px solid #dddddd;
+}
+.doc_login_form .terms_condition{
+	margin-top: 27px;
+}
+.register_btn button{
+	padding: 5px 50px;
+    width: auto;
+    margin-top: 27px;
+}
+.register_btn button:hover{
+	background-color: #0c4e93;
+	color: white;
+}
+.doc_login_form .form-check{
+	text-align: left;
+}
+/*e-prescription page starts here*/
+.e_prescription_section{
+	margin: 58px 0px 78px;
+}
+.prescription_section{
+	margin: 0 auto;
+	max-width: 1110px;
+	border:1px solid #dddddd;
+}
+.doc_desc{
+	width: 100%;
+	border-bottom: 1px solid #dddddd;
+	padding: 30px 20px 35px 33px;
+}
+.doc_desc .doctor_name h4{
+	border-left: none;
+	padding: 0px;
+	font-size: 25px;
+}
+.doc_desc .doctor_name p{
+	font-size: 15px;
+	padding: 0px;
+	line-height: 3;
+}
+.doctor_qualification p{
+	font-size: 15px;
+	line-height: 1.9;
+	padding-right: 20px;
+}
+.medicine_list_part{
+	padding: 30px;
+}
+.medicine_search{
+	margin-top: -50px;
+}
+.medicine_search .form-control{
+	height: 49px;
+}
+/*medicine list section starts here*/
+.medicine_list_part .table .row {
+  display: table;
+  padding-bottom: 10px;
+}
+
+.t_title, .t_line, .t_value {
+  display: table-cell;
+}
+
+.t_title, .t_value {
+  white-space: nowrap;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.table {
+  width: 100%;
+  padding: 33px 50px;
+  min-height: 66vh;
+}
+
+.t_line {
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+}
+/*forgot password page starts here*/
+.forgotpwd_form .login_btn{
+	border-bottom: none;
+}
+.forgotpwd_form .login_btn button{
+	margin: 10px 0px 19px;
+}
+/*lab bookking pathology page starts here*/
+/*search section*/
+.pathology_map_search{
+	padding: 42px 0px 25px;
+	border-bottom: 1px solid #dddddd;
+}
+.pathology_map_search .search_btn button{
+	background-color: #008cd2;
+	width: 100%;
+	color: white;
+	box-shadow: none;
+	padding:8px;
+	margin-top: 30px;
+	border-radius: 0px;
+}
+.pathology_map_search label{
+	font-weight: 600;
+}
+/*map section*/
+.map_section{
+	border-bottom: 1px solid #dddddd;
+}
+.map_search iframe{
+	width: 100%;
+	min-height: 88vh;
+	margin:42px 0px 55px;
+}
+/*lab-detail section*/
+.lab_detail_section .section_title{
+	padding:20px 0px;
+}
+.pathology_row{
+	padding-top: 25px;
+}
+.lab_detail_section .lab_image{
+	height: 300px;
+}
+.lab_detail_section .lab_image img{
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.doctor_overview p{
+	width: 102%;
+}
+.lab_detail_section .pathology_row .doctor_overview{
+	padding-top: 24px ;
+}
+.image_section{
+	border:1px solid #dddddd;  
+}
+.lab_detail_section .lab_image{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.lab_detail_section .doctor_overview{
+	padding-top: 17px;
+}
+.lab_detail_section{
+	padding-bottom: 39px;
+	border-bottom: 1px solid #dddddd;
+}
+/*second opinion page starts here*/
+.heading_content{
+	padding: 7px 0px;
+	color: #3e3d3d;
+	line-height: 1.9;
+}
+.doctor_slider_section{
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 60px;
+}
+.opinion_sec .input_with_icont{
+	margin-top: 15px;
+}
+.doctor_slider_section .page_title{
+	padding: 62px 75px 35px 80px;
+}
+.opinion_sec{
+	padding: 36px 0px 62px !important;
+}
+/*slider section*/
+.second_opi_slider{
+	padding-bottom: 70px !important;
+}
+.slider_part{
+	padding: 13px 20px;
+}
+.test_slider{
+	padding: 0px 65px;
+}
+.slider_head{
+	padding: 12px;
+	font-size: 16px;
+	line-height: 2;
+}
+.slider_head1{
+	font-size: 16px;
+	line-height: 1;
+}
+.slider_doc{
+	font-weight: 600;
+	line-height: 0.9;
+	padding-top: 10px;
+}
+.slider_image img{
+	width: 100%;
+	height: auto;
+	padding: 8px;
+}
+.slick-slide.slick-current.slick-active.slick-center{
+	transform: scale(1.08);
+}
+.test_slider button {
+    position: absolute;
+    top: 12px;
+    bottom: 0;
+    margin: auto;
+    display: table;
+    height: 54px;
+    z-index: 11;
+    background: #008cd2;
+    border-color: #008cd2;
+    border-radius: 0px; 
+}
+.test_slider button:focus{
+	box-shadow: none;
+}
+.test_slider button.slick-prev{
+	left: 0;
+}
+.test_slider button.slick-next{
+	right: 0;
+}
+/*physiodetail page starts here*/
+/*.physio_detail button{
+	margin-top: 0px;
+}*/
+.physio_detail_ul .tab_ul_li li{
+	font-size: 16px;
+	line-height: 1.9;
+}
+.physio_detail_tab .tab-content{
+	margin-top: 23px;
+}
+.physio_detail_ul{
+	margin-top: 40px;
+	margin-bottom: 95px;
+}
+/*appointment after login page starts here*/
+.after_login .navbar-expand-xl .navbar-nav .nav-item{
+	margin-left: 40px;
+	font-weight: 600;
+}
+.after_login .extra_ul{
+	padding-left: 26px;
+}
+.after_login ul.row{
+	margin-left: 0px !important;
+}
+.navbar-expand-xl .navbar-nav .nav-item a.active{
+	color: #0c4e93;
+}
+input[type=file]{
+	display: none;
+}
+input[type=file] + label {
+    display:inline-block;
+    padding: 9px 15px;
+    background-color: #008cd2;
+    border:1px solid #008cd2;
+    width: 100%;
+    font-size: 14px;
+    color: white; 
+    cursor: pointer;
+    text-align: center;
+}
+#flip{
+	padding: 30px 0px 60px !important;
+}
+/*appointment based on doctor*/
+/*calender*/
+.based_on_doc{
+	padding:51px 0px 31px;
+}
+.base_doc_title h1{
+	font-size: 19px !important;
+}
+.time_radio_btn .form-check-label:hover{
+	color: #0c4e93;
+	border-color: #0c4e93;
+}
+.date_div .form-check-label:hover{
+	color: #0c4e93;
+	border-color: #0c4e93;
+}
+.terms_condition .form-check-label{
+	cursor: pointer;
+}
+.fc .fc-toolbar>*>:first-child{
+	font-size: 18px !important;
+}
+.fc-button-group, .fc button{
+	display: block;
+}
+.fc th{
+	background: #0c4e93 !important;
+	padding: 10px 20px;
+	color: white;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 400; 
+}
+.fc tbody .fc-row .fc-content-skeleton tbody tr:last-child td{
+	padding-bottom: 0px !important;
+}
+.fc-icon-left-single-arrow:after {
+    content: "\25C4";
+    font-size: 18px;
+    color: #0c4e93; 
+}
+.fc-icon-right-single-arrow:after {
+    content: "\25BA";
+    font-size: 18px;
+    color: #d3d3d3;
+}
+.fc-ltr .fc-basic-view .fc-day-number {
+    /* text-align: right;
+    padding: 0px 5px 65px 20px;
+	height: 40px; */
+	text-align: right;
+    /* padding: 0px 5px 65px 20px; */
+    height: 60px;
+    width: 5px;
+}
+.fc-today{
+	background: #d5e3f3 !important;
+}
+.fc-sun{
+	background: #f5f5f5 !important;
+}
+.fc button{
+	background: none;
+	border:none;
+	box-shadow: none;
+	height: 1px;
+}
+/*appointment based on hospital page starts here*/
+.based_on_hospital_row{
+	padding-bottom: 30px;
+	border-bottom: 1px solid #dddddd;
+}
+.based_on_hospital_row2{
+	padding-top: 46px;
+}
+/*appointment booking page starts here*/
+.fc-day-grid-event .fc-content{
+	white-space: normal;
+}
+.fc-day-grid-event {
+    margin-top: -43px;
+    background: none;
+    border: none;
+    font-size: 12px;
+    line-height: 1.5;
+    }
+.fc-event{
+	background-color: none !important;
+	padding-left: 10px;
+}
+/*#calendar1 .fc-sun{
+	background: none !important;
+}*/
+/*physiotherapy list page starts here*/
+.pain_border{
+	border-right: 2px solid #dddddd;
+}
+.physio_basic_pain_section .page_title{
+	padding: 20px 0px 20px 0px;
+	font-weight: 600;
+}
+.page_sub_title2{
+	padding: 5px 0px;
+}
+.physio_basic_pain_section .pride_box_div{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+button#myBtn, button#myBtn2, button#myBtn3{
+	background: none;
+}
+.physio_basic_pain_section  button.btn{
+	border:2px solid #0c4e93;
+	padding: 12px 60px;
+	background-color: white;
+	color: #0c4e93;
+	font-weight: 600;
+	box-shadow: none;
+	border-radius: 0px;
+	margin-top: 15px;
+}
+.physio_basic_pain_section  button.btn:hover{
+	background: #0c4e93;
+	color: white; 
+}
+/*pain box starts*/
+.pain_box{
+	border:1px solid #dddddd;
+	padding: 40px 20px;
+	width: 100%;
+	height: 100%;
+}
+.pain_border .col-lg-4{
+	padding:30px 15px 0px 15px;
+}
+.physio_basic_pain_section .protinex_border{
+	padding-bottom: 70px;
+}
+.physio_basic_pain_section .pain_head{
+	padding: 15px 0px;
+}
+/*nursing list page starts here*/
+.nursing_pain_section .pride_heading1 {
+    padding: 10px 62px;
+    }
+    .nursing_pain_section .pride_heading{
+    padding: 5px 40px;
+    }
+.nursing_pain_section .pride_box{
+	padding: 20px;
+}
+.pain_border .page_title h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.pain_border .protinex_part_list .page_title{
+	padding: 26px 0px 20px 0px !important;
+}
+/*my dashboard page starts here*/
+/*accordian section starts here*/
+.dashboard_section{
+	margin: 67px 0px;
+}
+.dashboard_header .navbar-expand-xl .navbar-nav .nav-link{
+	padding-right: 14px !important;
+}
+.extra_ul .nav-link:hover{
+	color: #0c4e93;
+}
+.card-header{
+	padding: 0px;
+	border-radius: 0px;
+	border:none;
+}
+.card-header button{
+	display: block;
+    padding: 12px 15px;
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    background: #0c4e93;
+    position: relative;
+    text-align: left;
+    border-radius: 0px;
+    border-top: 1px solid white;
+    box-shadow: none;
+    text-decoration: none;
+}
+.btn-link:hover{
+	text-decoration: none;
+}
+.card-body:hover .btn-link{
+	text-decoration: none !important;
+}
+.card-header button:hover{
+	color: white;
+	text-decoration: none;
+}
+.card-header button:after{
+	 content: "-";
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #0c4e93;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.card-header button.collapsed:after{
+	content: "+";
+}
+.card-header button.collapsed:hover{
+	text-decoration: none;
+	text-underline-position: 0px;
+}
+.card-body{
+	padding: 0px;
+	border-radius: 0px;
+	/*min-height: 110vh;*/
+}
+.dashboard_box{
+	height: 100%;
+	border:1px solid #dddddd;
+}
+.card{
+	border:none;
+}
+.card-body ul li a{
+	color: black;
+	font-size: 14px;
+}
+.card-body ul li a:hover{
+	color: #008cd2;
+	text-decoration: none;
+}
+.card-body ul li a.active{
+	color: #008cd2;
+	text-decoration: none;
+}
+.dashboard_section .fc-day-grid-event {
+    margin-top: -50px;
+} 
+.dashboard_section .fc-event{
+	padding-left: 0px !important;
+}
+.dash_calender .fc .fc-toolbar>*>:first-child {
+    font-size: 30px !important;
+    padding-bottom: 13px;
+    }
+/*landing page starts here*/
+.logo{
+	padding: 6px 0px;
+	margin-left: -10px;
+}
+.extra_link_part{
+	border-left: 2px solid #e1e2e3;
+}
+.header_bottom{
+	padding: 0px !important;
+}
+.landing_page_section .header_bottom {
+    width: 100%;
+    /*padding: 0px !important;*/
+}
+.navbar{
+	padding: 0px !important;
+}
+.navbar-nav{
+	padding-right: 40px;
+}
+.navbar ul.navbar-nav{
+	z-index: 11111;
+}
+.navbar-expand-xl .navbar-nav .nav-link{
+	padding: 14px 0px 19px;
+	font-size: 16px;
+	color: #222;
+	font-weight: 400;
+}
+.navbar-expand-xl .navbar-nav .nav-item {
+    margin-left: 28px;
+}
+.navbar-expand-xl .navbar-nav .nav-link:hover,
+ .navbar-expand-xl	 .navbar-nav .nav-link.active{
+	color: #0c4e93;
+}
+.header_bottom .custom_dropdwn .dropdown-menu{
+	background: white;
+	min-width: 600px;
+	top: 56px;
+	border-radius: 0px;
+}
+.header_bottom .dropdown .dropdown-menu{
+	top: 56px;
+	border-radius: 0px;
+}
+.extra_nav .dropdown .dropdown-menu{
+	top: 55px;
+}
+.header_bottom .dropdown-menu .dropdown-item{
+	font-size: 13px;
+	padding: 8px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+.first_nav_div{
+	border-right: 1px solid #dddddd;
+}
+li.nav-item:hover .dropdown-menu, li.custom_dropdwn:hover .dropdown-menu{
+	display: block;
+}
+.extra_li{
+	list-style: none;
+}
+.extra_li a{
+	color: #222;
+	padding: 14px 12px 20px;
+}
+.extra_ul{
+	padding-left: 16px;
+	border-left: 2px solid #e3e3e3;
+}
+/*banner section*/
+.banner_section{
+	background: url(../images/bannerbg.png);
+	background-size: cover;
+	background-repeat: initial;
+	border-bottom: 1px solid #dddddd;
+	height: 100%;
+}
+.banner_inner_content{
+	padding: 111px 0px;
+}
+.banner_head{
+	font-size: 24px;
+	color: #222222;
+	font-weight: 700;
+	word-spacing: 3px;
+}
+.banner_heading{
+	font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    padding: 13px 0px;
+    word-spacing: 6px;
+}
+.banner_heading span{
+	color: #008cd2;
+	word-spacing: 12px;
+}
+.banner_inner_content img{
+	width: 110px;
+	height: auto;
+	padding: 6px 0px;
+}
+.banner_descr{
+	font-size: 20px;
+    width: 56%;
+    line-height: 1.9;
+    padding: 27px 0px;
+    font-weight: 600;
+    word-spacing: 1px;
+}
+.banner_inner_content  button{
+	border: 2px solid #0c4e93;
+    padding: 14px 32px;
+    color: #0c4e93;
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow: none;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+.banner_inner_content  button:hover{
+	background: #0c4e93;
+	color: white; 
+}
+.landing_tab_section{
+	border-bottom: 1px solid #dddddd;
+	padding: 45px 0px 35px;
+}
+.landing_tab_section .page_title h1{
+	margin-top: 22px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.landing_row{
+	padding: 25px 0px 30px 0px;
+}
+.landing_row .tab-content{
+	margin-top: 19px;
+}
+.tab_background{
+	padding: 10px 15px;
+}
+.tab_back_opac{
+	background: url(../images/tab_back.png);
+	background-size: cover;
+	background-repeat: initial;
+	padding: 45px;
+	height: 100%;
+}
+.landing_page_tab .tab_ul_part{
+	margin-top: 0px;
+}
+.landing_page_tab .tab_ul_part ul li a{
+	height: 150px;
+	padding: 24px 17px;
+}
+.nav-tabs li a:hover{
+	color: #0c4e93;
+	border-color: #0c4e93;
+}
+.nav-tabs li a:hover img{
+	filter: none;
+}
+.tab_content_heading{
+	font-size: 30px;
+    font-weight: 600;
+    padding: 15px 0px 2px 0px;
+    word-spacing: 3px;
+}
+.tab_content_1{
+	line-height: 2.17 !important;
+	width: 98%;
+}
+.tab_background img{
+	filter: grayscale(100%) brightness(500%);
+	width: 78px;
+	height: auto;
+}
+/*slider section*/
+.doctor_slider_section .page_title h1{
+	font-weight: 600;
+	font-size: 30px;
+    word-spacing: 3px;
+}
+.landing_doc_slider{
+	padding-bottom: 81px !important;
+}
+.slider_customers .slider_image{
+	border:1px solid #dddddd;
+}
+.test_slider_1{
+	padding:0px 60px;
+}
+.fa-caret-left:before{
+	color: black;
+}
+.fa-caret-right:before{
+	color: black;
+}
+.slider_customers .page_title{
+	padding: 72px 75px 35px 80px;
+}
+.slider_customers .page_title h1 img{
+	margin-left: 33px;
+}
+.slider_customers .slider_part{
+	padding: 0px 20px;
+}
+.slider_customers{
+	padding-bottom: 80px;
+}
+/*footer section starts here*/
+.landing_footer .footer_contact_info{
+	padding: 45px 35px 48px 65px;
+}
+.footer_content p{
+	margin-left: 50px;
+	padding-bottom: 1px !important;
+}
+.landing_footer .logo{
+	padding: 25px 25px 25px;
+}
+.landing_footer_section .logo img{
+	max-width: 201px;
+}
+.footer_right .landing_footer .footer_address{
+	width: 70%;
+	padding-left: 7px !important;
+	line-height: 35px !important;
+}
+.landing_footer_section .footer_bottom{
+	padding: 33px 100px 40px 50px;
+}
+.landing_footer_section .footer_contact_info p{
+	color: #757575;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 14px;
+}
+.landing_footer_section .footer_contact_info span{
+	display: block;
+    margin-top: 27px;
+    font-size: 20px;
+}
+.landing_footer .col-md-4{
+	padding-left: 0px;
+}
+.landing_footer .footer_contact_info span img{
+	margin-right: 15px;
+}
+footer ul li p{
+	word-spacing: -2px;
+}
+ul.social_media_links li a:hover{
+	border-bottom: 2px solid white;
+}
+/*search button block starts here*/
+.landing_search_button{
+	background-size: cover;
+	width: 400px;
+	height: auto;
+    position: absolute;
+    right: 0;
+    top: 167px;
+    z-index: 5; 
+}
+.search_div_back{
+	/*background: rgba(12, 78, 147, 0.7); */
+} 
+.search_btn_back{
+	background: #0c4e93;
+	padding: 15px;
+	width: 60px;
+    height: 60px;
+    border: none;
+    position: absolute;
+    left: -60px;
+    top: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.search_content.toggle_box{
+	right: 0;
+}
+.search_btn_back img{
+	filter: grayscale(100%) brightness(500%);
+}
+/*.show{
+	display: block;
+}*/
+.search_content{
+	background: url(../images/search_bac.png);
+	padding: 22px 34px;
+	position: fixed;
+	right: -400px;
+	transition: all 0.5s;
+    width: 400px;
+    top: 0px;
+    bottom: 0;
+    margin: auto;
+    display: table;
+}
+.content_scroll{
+	/*padding: 15px;*/
+}
+.search_heading{
+	padding: 6px 0px;
+	font-size: 20px;
+	font-weight: 600;
+}
+.search_content1{
+	padding: 10px 0px;
+	font-size: 16px;
+}
+.search_content .form-control{
+	background: none;
+	border-color: white;
+	box-shadow: none !important;
+	padding: 20px 10px;
+	margin: 10px 0px;
+	font-size: 14px;
+	border-radius: 0px;
+}
+.search_content .form-control::placeholder{
+	 color: white;
+}
+.search_content .register_btn button{
+	padding: 5px 25px;
+    width: auto;
+    margin: 10px 0px;
+    background: #008cd2;
+    color: white;
+    border-radius: 0px;
+}
+.search_main{
+	width: 100%;
+	display: inline-block;
+	padding: 10px;
+}
+.working_day{
+	border-bottom: 1px solid white;
+}
+/*New baby born page starts here*/
+.baby_born_breadcrumb .page_title h1{
+	word-spacing: 1px !important;
+	font-size: 20px !important;
+}
+.born_baby_heading_content{
+	line-height: 2.3;
+	padding: 8px 0px 0px;
+}
+.born_baby_head_sec{
+	padding: 36px 0px 37px !important;
+}
+.born_baby_content_section{
+	background: url(../images/baby_born_bg.png);
+	padding: 50px 0px 40px;
+}
+.born_baby_content{
+	font-size: 16px;
+	line-height: 2.3;
+	padding: 4px 0px 17px;
+	width: 92%;
+}
+.baby_born_sec .page_title h1{
+	font-size: 25px;
+	font-weight: 700;
+	padding-top: 10px;
+}
+.baby_born_sec{
+	padding: 36px 0px 54px !important;
+}
+.form_control_section{
+	padding: 15px 0px 5px;
+}
+.form_control_section input{
+	margin: 15px;
+}
+.baby_btn button{
+	border: 2px solid #0c4e93;
+    background-color: white;
+    border-radius: 0px;
+    padding: 14px 32px;
+    color: #0c4e93;
+    font-size: 20px;
+    font-weight: 700;
+}
+.baby_btn button:hover{
+	background: #0c4e93;
+	color: white; 
+}
+.extra_nav{
+	float: right;
+	}
+/*Smart Ambulance page starts here*/
+#more6, #more4, #more5{
+	display: none;
+}
+.smart_ambu_feature .feature_heading{
+	padding: 8px 43px;
+}
+textarea{
+	resize: none;
+}
+.smart_ambu_head_content{
+	line-height: 2;
+    padding: 10px 0px 0px;
+}
+.ambu_heading{
+	padding: 15px 39px 10px !important;
+}
+.ambu_form{
+	padding: 37px 0px 47px !important;
+}
+.ambu_form .form-group{
+	margin-bottom: 1.8rem !important;
+}
+.smart_ambu_feature .page_title h1{
+	margin-top: 60px;
+}
+.ambu_img{
+	padding-top: 15px;
+}
+.ambu_benefit .benefit_heading1{
+	padding: 15px 80px !important;
+}
+/*doctor profile page starts here*/
+.doc_profile{
+	padding:20px 0px 60px !important;
+}
+/*ops scheduler page starts here*/
+.opd_schedule_section{
+	padding: 60px 0px 70px;
+}
+.opd_schedule_section .fc-content{
+	padding: 0px 13px 13px 5px;
+	margin-top: -85px;
+}
+.opd_schedule_section .fc-ltr .fc-basic-view .fc-day-number{
+	padding: 0px 5px 82px 20px;
+}
+.btn:focus{
+	box-shadow: none !important;
+}
+/*prescription sharing page starts here*/
+.e_prescription_section{
+	/* padding-top: 80px !important; */
+}
+.share_btn{
+	float: right;
+	margin-top: -82px;
+	display: inline-block;
+}
+.share_button_section  button{
+	border:2px solid #008cd2;
+	padding: 15px 28px;
+	font-size: 18px;
+	background-color: white;
+	color: #008cd2;
+	font-weight: 600;
+	box-shadow: none;
+	border-radius: 0px;
+}
+.share_button_section  button.active{
+	border:2px solid #0c4e93;
+	color: #0c4e93;
+}
+.share_button_section  button:hover{
+	background: #0c4e93;
+	color: white; 
+}
+.prescriprion_sharing .doctor_name p{
+	line-height: 1.9 !important;
+}
+.prescriprion_sharing .doctor_name{
+	padding-left: 50px !important;
+}
+.prescriprion_sharing .doctor_qualification p{
+	font-size: 13px !important;
+}
+.prescriprion_sharing .doctor_qualification{
+	padding: 0px !important;
+	line-height: 2;
+}
+.presc_subhead{
+	font-weight: 700;
+	font-size: 16px;
+}
+.presc_detail_sec .medicine_search{
+	margin-top: 5px !important;
+}
+.doc_desc{
+	padding: 38px 20px 25px 33px;
+}
+.patient_detail_sec{
+	background: #f8f9fb;
+	padding: 5px 0px;
+	border-bottom: 1px solid #dddddd;	
+}
+.patient_detail_sec p{
+	display: inline-block;
+	margin: 26px;
+}
+.patient_detail_sec p span{
+	font-weight: 700;
+	font-size: 16px;
+}
+.presc_detail_sec input::placeholder, .presc_detail_sec select#doctor_select{
+	font-size: 16px;
+}
+.val_2{
+	padding-left: 25px;
+}
+.presc_detail_sec .table{
+	padding: 0px 13px !important;
+}
+.presc_section2{
+	background: #f8f9fb; 
+}
+.presc_detail_sec .table, .prescriprion_sharing .table{
+	min-height: unset;
+	margin-bottom: 0px !important;
+}
+.prescriprion_sharing .table .row{
+	display: table;
+}
+.presc_section2 p{
+	font-size: 19px;
+    font-weight: 700;
+    margin-left: -20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.presc_section2 .t_title{
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 2.3;
+}
+
+/*validate otp page starts here*/
+.otp_page .form_section{
+	max-width: 505px;
+	padding: 18px 28px 6px;
+}
+.otp_page .form_heading{
+	padding-bottom: 18px;
+}
+.form_content{
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+.form_content span{
+	font-weight: 700;
+}
+.otp_page .form-group{
+    padding: 4px 34px 0px !important;
+}
+.otp_page .login_btn{
+	margin: 4px 34px 0px !important; 
+}
+/*lab booking pathologist report page starts here*/
+.lab_overview{
+	padding-top: 20px;
+}
+.lab_overview p{
+	line-height: 2.1;
+	color: #757575;
+}
+.lab_overview span{
+	font-weight: 700;
+	color: black;
+}
+/*list of report section starts*/
+.pathology_report .section_title{
+	padding: 0px !important;
+}
+.report_list_section{
+	padding: 50px 0px;
+}
+.reports{
+	padding: 30px 0px;
+}
+.report_box{
+	background: #f4f4f4;
+	padding: 20px;
+}
+.report_list_part{
+	padding: 5px 10px;
+}
+.report_prize{
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 23px;
+	color: #008cd2;
+}
+.report_name{
+	color: black;
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 17px;
+}
+.report_content{
+	color: #757575;
+	line-height: 1.9;
+}
+/*comparison of lab page starts here*/
+.compare_lab_section{
+	padding: 60px 0px;
+}
+.comparison_lab label{
+	font-size: 22px;
+}
+.comparison_lab .search_btn button{
+	margin-top: 40px;
+}
+.compare_lab_box{
+	border:1px solid #dddddd;
+	height: 100%;
+}
+.compare_lab_img{
+	background: #f4f4f4;
+	padding: 30px; 
+	border-bottom: 1px solid #dddddd;
+}
+.compare_lab_img img{
+	padding-bottom: 20px;
+}
+.compare_lab_heading{
+	font-size: 18px;
+	font-weight: 700;
+	color: black;
+}
+.compare_lab_content{
+	padding: 20px;
+}
+.compare_lab_content_box1{
+	border-bottom: 1px solid #dddddd;
+}
+.compare_lab_content_box2{
+	padding: 15px 0px;
+}
+.compare_lab_box .report_prize {
+    top: 175px;
+    right: 26px;
+}
+.compare_lab_box .report_name{
+	font-size: 16px;
+}
+.compare_lab_box .report_content{
+	padding-bottom: 10px;
+}
+.content2{
+	padding-bottom: 0px !important;
+	line-height: 1.9;
+}
+.img_div_2 img{
+	padding: 18px 0px 30px;
+}
+.img_div_1 img{
+	padding: 12px 0px 21px;
+}
+/*appointmnet booking version 3.1 page starts here*/
+#search_content_box, #search_content_by_hospital{
+	display: none;
+}
+.serach_div_row .form-control{
+	margin-top: 0px !important;
+}
+.triangle{
+	border:3px solid #888888;
+	outline: none;
+	position: relative;
+}
+.triangle::after {
+	content: "";
+	position: absolute;
+	left: -2px;
+	bottom: -17px;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 14px solid #888888;
+}
+.toggle_search_box, .toggle_search_box2{
+	background: #0c4e93;
+	padding: 20px;
+	margin: 30px 0px;
+}
+.toggle_search_box label, .toggle_search_box2 label{
+	font-size: 16px !important;
+	color: white !important;
+}
+.toggle_search_box .search_btn button{
+	background-color: #008cd2;
+	width: 100%;
+	color: white;
+	box-shadow: none;
+	padding:12px;
+	margin-top: 41px;
+	border-radius: 0px;
+}
+.toggle_search_box input::placeholder, .toggle_search_box2 input::placeholder{
+	font-size: 14px;
+}
+/*search by hospital section starts here*/
+.toggle_search_box2 .search_btn button{
+	background-color: #008cd2;
+	width: 100%;
+	color: white;
+	box-shadow: none;
+	padding:12px;
+	margin-top: 41px;
+	border-radius: 0px;
+}
+/*my statistics page starts here*/
+/*bar chart section starts here*/
+.bar_chart{
+	border:1px solid #dddddd;
+	margin-bottom: 25px;
+}
+.chart_title{
+	color: black;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 20px 20px 5px;
+}
+/*pie chart section starts here*/
+.pie_chart{
+	border:1px solid #dddddd;
+	margin-top: 25px;
+}
+/*Follow up page starts here*/
+/*modal section starts here*/
+.modal-header{
+	padding: 25px;
+}
+.modal-header .form-group{
+	padding: 20px 0px;
+	margin: 0 auto;
+}
+button.btn{
+	border-radius: 0px;
+}
+.modal-header button.close{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	border:none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 6px;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+.modal-header input[type=radio] + label{
+	padding: 15px 35px !important;
+}
+.modal-dialog .modal-header input[type=radio]:checked + label { 
+    background-color:#0c4e93 !important;
+    border-color: #0c4e93 !important;
+    color: white;
+    width: 100%;
+}
+.modal-dialog button:hover{
+	background: none !important;
+}
+.modal-dialog button:focus{
+	/*background: none !important;*/
+	outline: none !important;
+}
+.modal-dialog .pick_date_time{
+	border-bottom: none !important;
+}
+.modal-footer{
+	display: unset !important;
+}
+.fc-view, .fc-view>table{
+	z-index: 11111;
+	display: block !important;
+}
+.modal-dialog .submit_btn button:hover{
+	background-color: #0c4e93 !important;
+	color: white !important;
+}
+/*calender section*/
+.ui-datepicker{
+	width: 100% !important;
+	margin-top: 40px;
+	padding: 0px;
+}
+.ui-datepicker .ui-datepicker-title{
+	text-align: left !important;
+}
+.ui-datepicker .ui-datepicker-header{
+	position: relative;
+    padding: .2em 0;
+    background: white;
+    border: none;
+    top: -54px;
+}
+.ui-datepicker table{
+	width: 100%;
+    font-size: .9em;
+    border-collapse: collapse;
+    margin-top: -35px;
+}
+.ui-datepicker th {
+    padding: 17px;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+    background: #0c4e93 !important;
+    color: white;
+}
+.ui-datepicker td{
+	padding: 0px;
+}
+.ui-datepicker td a {
+    display: block;
+    padding: 12px 12px 80px 40px;
+    text-align: right;
+    text-decoration: none;
+}
+.ui-state-default, .ui-widget-content .ui-state-default{
+	background:none !important;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight{
+	background: #d5e3f3 !important;
+	border-color: #d5e3f3 !important;
+}
+.ui-state-active, .ui-widget-content .ui-state-active{
+	border: 1px solid #003eff;
+    background: #d5e3f3 !important;
+    font-weight: normal;
+    color: black !important;
+}
+.ui-widget.ui-widget-content{
+	padding: 0px !important;
+	border:none;
+}
+/*vital collection page starts here*/
+.nurse_form_detail_section{
+	padding: 50px 0px;
+}
+.detail_sec_btn button{
+	background: #008cd2;
+	color: white;
+	padding: 9px 15px;
+	width: 100%;
+	margin-top: 18px;
+}
+.detail_sec_btn button:hover{
+	background: #0c4e93;
+	color: white;
+}
+.form_detail_sec{
+	border:1px solid #dddddd;
+}
+.form_detail_sec .row{
+	margin-left: 1px !important;
+	margin-right: 0px !important;
+}
+.form_detail_sec .patient_detail_sec{
+	padding: 12px;
+}
+.detail_border{
+	border-left: 1px solid #dddddd;
+}
+.form_detail_box{
+	height: 100%;
+	padding: 20px;
+}
+.form_detail_box span{
+	font-weight: 700;
+}
+.form_detail_box p{
+	line-height: 2.1;
+}
+.second_sec{
+	margin-top: 50px;
+}
+/*Medical equipment supply page starts here*/
+/*tab section starts here*/
+.medical_equip_section{
+	background: url(../images/supply_bg2.png);
+	background-size: cover;
+	padding: 30px 0px 50px;
+}
+.medical_equip_section .nav{
+	flex-wrap: unset !important;
+}
+/*medical equipment list page starts here*/
+/*list of equipment section*/
+.brand_section{
+	font-size: 16px;
+	margin-top: 20px;
+}
+.brand_section p span{
+	font-weight: 700;
+}
+.medical_equip_list .doctor_name h4{
+	border-left: none;
+	padding: 0px;
+}
+.medical_equip_list .doctor_name h4 a{
+	color: black;
+}
+.medical_equip_list .doctor_name h4 a:hover{
+	color: #0c4e93;
+}
+.medical_equip_list{
+	padding: 30px 0px 12px !important;
+}
+.medical_equip_list .dermatology_doctor_detail{
+	margin-top: 30px;
+	padding-bottom: 0px;
+}
+/*medical equipment detail page starts here*/
+/*select location section starts here*/
+.select_location{
+	border:1px solid #dddddd;
+	margin: 30px 0px;
+}
+.part_border{
+	border-left: 1px solid #dddddd;
+}
+.spinner_sec{
+	display: inline-block;
+	padding-bottom: 20px;
+}
+.spinner_sec label{
+	font-size: 20px;
+	font-weight: 700;
+}
+.spinner_sec .input-group{
+	width: auto !important;
+	padding-left: 30px;
+}
+.select_location_part{
+	padding: 40px 60px;
+}
+/*.select_location_part .row{
+	flex-wrap: unset;
+}*/
+.input-group-prepend {
+    /* margin-right: 5px; */
+    /* background: #008cd2; */
+    color: white;
+}
+.input-group-prepend:hover, .input-group-append:hover{
+    background: #0c4e93;
+}
+.btn-outline-secondary{
+	border:none !important;
+}
+.input-group-prepend button strong {
+    font-weight: bolder;
+    font-size: 26px;
+    color: white;
+}
+.input-group-prepend button.btn{
+	padding: 0px !important;
+}
+.input-group-append{
+	margin-left: 5px;
+    /* background: #008cd2; */
+    color: white;
+}
+.input-group-append button strong {
+    font-weight: bolder;
+    font-size: 26px;
+    color: white;
+}
+.input-group-prepend button, .input-group-append button{
+    margin: 0;
+    line-height: 0;
+}
+.radio_sec{
+	padding-left: 53px;
+}
+.radio_sec input[type=radio] + label {
+    padding: 10px 50px;
+}
+.radio_sec2{
+	width: 100%;
+}
+.radio_sec2 input[type=radio]{
+	display: block !important;
+	margin-right: 10px;
+	margin-top: 5px;
+	font-size: 20px;
+}
+.spinn_label{
+	color: #008cd2;
+	font-size: 16px !important;
+	padding-left: 20px;
+	padding-top: 8px;
+}
+.spinner_section .input-group{
+	padding-left: 0px;
+}
+.spinner_section{
+	margin-top: 20px;
+	padding-bottom: 0px;
+}
+.location_heading{
+	font-size: 20px;
+	font-weight: 700;
+}
+.part_border input[type=radio] + label {
+    padding: 45px 15px;
+    background-color: white;
+    /*border: 1px solid #d6d6d6;*/
+    width: 100%;
+    font-size: 17px;
+    color: black;
+    margin-top: 30px;
+    cursor: pointer;
+    /*filter: grayscale(80%) brightness(100%);*/
+}
+.part_border input[type=radio] checked + label{
+	/*filter: grayscale(50%) brightness(0%);*/
+	background: white;
+	border:1px solid #008cd2;
+	color: #008cd2;
+}
+.part_border input[type=radio] checked + label p{
+	color: #008cd2;
+}
+/*enquire section starts here*/
+.enquire_section{
+	margin:20px 0px 0px;
+}
+.enquire_section .row{
+	/*margin-left: 0px !important;*/
+	margin-right: 0px !important;
+}
+.enquire_part1{
+	background: #0c4e93;
+}
+.enquire_part2{
+	background: #008cd2;
+}
+.enquire_btn{
+	float: right;
+}
+.enquire_btn button{
+	color: white;
+	border:2px solid white;
+	background:#0c4e93;
+	padding: 15px 50px;
+	margin: 45px 100px 30px;
+	font-size: 20px;
+}
+.enquire_btn button:hover{
+	color: #0c4e93;
+	border:2px solid #0c4e93;
+	background: white;
+}
+.enquire_row{
+	padding: 40px;
+	margin-left: -105px;
+}
+.or{
+	color: #008cd2;
+    background: url(../images/round.png);
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
+}
+.call_sec{
+	padding-left: 30px;
+}
+.call_us{
+	color: white;
+	font-size: 22px;
+}
+.number{
+	color: white;
+	font-size: 28px;
+}
+/*tab section starts here*/
+.medical_equip_section .equip_detail_tab p{
+	text-align: left !important;
+}
+    
+
+
+
+
+@media (max-width: 1199px){
+	.benefit_heading1{
+		font-size: 18px;
+		font-weight: 600;
+		padding: 15px 60px;
+	}
+	.landing_page_section button.navbar-toggler{
+		display: block !important;
+		top: 5px;
+		right: 10px;	
+	}
+	.landing_page_section nav.navbar {
+		margin-left: 0px;
+	    padding: 0;
+	    position: absolute;
+	    background-color: white;
+	    left: 0;
+	    right: 0;
+	    top: 66px;
+	}
+	.landing_page_section .navbar-expand-xl .navbar-nav .nav-item {
+    margin-left: 0px;
+	}
+	.navbar-expand-xl .navbar-nav .nav-link{
+		padding: 10px;
+	}
+	.speciality_heading{
+		padding: 12px;
+	}
+	.speciality_heading1, .speciality_sub_head1{
+		padding: 0px 0px 0px 110px;
+		margin-top: -60px;
+	}
+	.speciality_sub_head{
+		padding: 20px 0px 0px 10px;
+	}
+	.doctor_consult_v3 .speciality_heading{
+		padding: 20px 0px 0px 15px;
+	}
+	.doctor_consult_v3 .speciality_heading1{
+		padding: 0px 0px 0px 110px;
+		margin-top: -60px;
+	}
+	.doctor_consult_v3 .speciality_sub_head1{
+		padding: 0px 0px 0px 110px;
+		margin-top: -60px;
+	}
+	.doctor_consult_v3 .speciality_heading2{
+		padding: 0px 0px 0px 105px;
+		margin-top: -55px;
+	}
+	.landing_page_tab .tab_ul_part ul li a{
+		width: 300px;
+	}
+	.emotional_part .tab_ul_part ul li a{
+		width: 139px;
+	}
+	.tab_ul_part ul li a{
+		width: 139px;
+	}
+	.emotional_part .tab_ul_part ul li a.emotional_box_1{
+		padding: 18px 21px;
+	}
+	.footer_address {
+    width: 100%;
+	}
+	.footer_content p{
+	margin-left: 0px;
+	}
+	.extra_ul{
+		border-left: none;
+	}
+	.extra_nav{
+		padding-right: 60px;
+	}
+	.patient_detail_sec p{
+		margin: 11px;
+	}
+	.prescriprion_sharing .doctor_qualification p{
+	float: none !important;
+	margin-left: 22.2%;
+	}
+	.presc_section2 .t_title{
+		font-size: 16px;
+	}
+	.compare_lab_box .report_prize{
+		top: 203px;
+	}
+	.call_sec{
+		padding-left: 32px;
+	}
+	.medical_equip_section .nav{
+		flex-wrap: wrap !important;
+	}
+}
+@media screen and (max-width: 991px){
+	.speciality_heading1, .speciality_sub_head1, .doctor_consult_v3 .speciality_heading,
+	.doctor_consult_v3 .speciality_heading1{
+    margin-top: 0px;
+    padding: 20px;
+}
+.all_page_search_section .input_with_icont img{
+	left:20px;
+}
+.pick_date_time .form-check {
+    width: 161px;
+    padding-bottom: 10px !important;
+}
+.forgot_pwd_part{
+	text-align: center;
+}
+.forgot_pwd{
+	float: none !important;
+}
+.new_user{
+	text-align: center !important;
+}
+.speciality_box_part{
+	margin-bottom: 10px;
+}
+.doctor_details{
+	padding-top: 35px;
+}
+.medicine_main_box{
+	padding-bottom: 15px !important;
+}
+.features_part .col-lg-4{
+	padding:15px 0px !important;
+}
+.feature_part1, .speciality_row{
+	margin-top: 0px;
+}
+.all_page_search_section .form-control {
+    margin-bottom: 10px;
+}
+.input_with_icont .form-control{
+	margin: 0px;
+}
+.pain_border{
+	border-right: none;
+}
+.doctor_qualification p{
+	float: none !important;
+}
+.landing_page_tab .tab_ul_part ul li a{
+	width: 340px;
+}
+.footer_right, .footer_left {
+    width: 100% !important;
+}
+#calendarEvents{
+	padding-top: 30px;
+}
+.prescriprion_sharing .doctor_qualification p{
+	margin-left: 24.2%;
+}
+.medicine_search .form-control{
+	margin-bottom: 10px;
+}
+.compare_lab_main_box{
+	margin-bottom: 30px;
+}
+.comparison_lab .search_btn button{
+	margin-top: 0px;
+}
+.compare_lab_box .report_prize{
+		top: 175px;
+	}
+	.enquire_btn{
+		float: none !important;
+		text-align: center !important;
+	}
+	.enquire_btn button {
+    margin: 45px 100px 70px;
+}
+.enquire_row{
+	margin-left: 0px;
+	/*text-align: center !important;*/
+	margin-top: -75px;
+}
+.or{
+	margin: 0 auto;
+}
+.phone_img img{
+	float: right;
+	padding-top: 20px
+}
+.call_sec{
+	padding-left: 0px;
+	padding-top: 20px;
+}
+.part_border{
+	border-left: none;
+}
+.radio_sec2 .row{
+	flex-wrap: unset;
+}
+}
+@media screen and (max-width: 768px){
+	.table {
+  		padding: 20px;
+	}
+	.landing_page_tab .tab_ul_part ul li a{
+	width: 248px;
+}
+.landing_footer_section ul.social_media_links{
+	float: left;
+}
+.emotional_part .tab_ul_part ul li a{
+	width: 161px;
+}
+.emotional_part .tab_ul_part ul li a.emotional_box_1{
+		padding: 29px 21px;
+	}
+	.physio_tab_part .col-md-2{
+		padding-bottom: 20px !important;
+	}
+	.tab_ul_recom{
+	margin-left: 0px;
+}
+.tab_ul_part1{
+	border-right: none;
+	padding: 0px;
+}
+.tab_ul_row, .presc_section2 p{
+	margin-left: 0px;
+}
+.presc_section2 .row{
+	margin-left: 0px !important;
+	margin-right: 0px;
+}
+}
+@media screen and (max-width: 767px){
+	.prescriprion_sharing .doctor_qualification p{
+		margin-left: 26.2%;
+	}
+}
+@media screen and (max-width: 565px){
+	.landing_page_tab .tab_ul_part ul li a{
+	width: 155px;
+}
+}
+@media screen and (max-width: 575px){
+	.emotional_button button{
+		margin-top: 20px;
+		/*margin-left: 90%;*/
+	}
+	.pick_date_time .form-check {
+    width: 266px;
+}
+	.fc th {
+    padding: 8px;
+    font-size: 12px;
+}
+.tab_ul_part ul li a{
+		width: 199px;
+	}
+.lab_detail_section .image_section {
+	margin: 10px 35px;
+}
+.emotional_part .tab_ul_part ul li a{
+	width: 175px;
+}
+.extra_ul {
+    padding-left: 0px;
+    margin: 0 auto;
+    z-index: -1;
+}
+.search_content{
+	width: 200px; 
+	right: -200px;
+}
+.content_scroll{
+	overflow-y: scroll;
+	height: 300px;
+	padding-right: 0px;
+}
+.landing_footer .logo {
+ 	padding: 27px 0px 25px;
+}
+.landing_footer_section .footer_contact_info p{
+	padding-left: 0px;
+}
+.prescriprion_sharing .doctor_qualification p{
+	margin-left: 5px;
+}
+.prescriprion_sharing .doctor_name{
+	padding-left: 5px !important;
+}
+.phone_img img{
+	float: none;
+	margin: 0 auto;
+}
+.phone_img{
+	text-align: center;
+}
+.call_sec{
+	text-align: center;
+}
+.enquire_btn button{
+	margin:45px 0px 70px;
+}
+.spinner_sec label{float: none !important;}
+.spinner_sec input{float: none !important;}
+.spinner_sec{text-align: center; width: 100%;}
+.spinner_sec div{float: none !important;}
+.spinner_sec .input-group{
+	padding-left: 0px;
+}
+.radio_sec{
+	padding-left: 0px;
+}
+}
+@media screen and (max-width: 525px){
+	.share_btn{
+		float: none !important;
+		display: flex;
+		margin: 15px;
+	}
+	.share_button_section button{
+		padding: 15px !important;
+	}
+	.prescription_main_part{
+		padding-top: 0px !important;
+	}
+}
+@media screen and (max-width: 476px){
+	.landing_page_section button.navbar-toggler{
+		top: -50px;
+	}
+	.extra_nav{
+		margin-right: 20px;
+	}
+	.presc_head_sec .row{
+		display: unset !important;
+	}
+}
+@media screen and (max-width: 422px){
+		.landing_page_section button.navbar-toggler {
+    display: block !important;
+    right: 10px;
+    bottom: 40px;
+}
+.extra_ul {
+    margin: 0 auto;
+    padding-left: 0px;
+    z-index: -1;
+}
+.pick_date_time .form-check {
+    width: 318px;
+}
+.landing_page_section button.navbar-toggler{
+		top: 0px;
+	}
+	.number{
+		font-size: 23px;
+	}
+}
+@media screen and (max-width: 350px){
+	.speciality_heading1, .doctor_consult_v3 .speciality_heading1, .doctor_consult_v3 .speciality_heading2{
+	padding: 0px 0px 0px 105px;
+    margin-top: -58px;
+	}
+	.speciality_sub_head1, .doctor_consult_v3 .speciality_sub_head1{
+		padding: 0px 0px 0px 105px;
+    margin-top: -50px;
+	}
+		.landing_page_tab .tab_ul_part ul li a{
+	width: 140px;
+}
+.emotional_part .tab_ul_part ul li a{
+	width: 140px;
+}
+.emotional_part .tab_ul_part ul li a.emotional_box_1{
+		padding: 18px 21px;
+	}
+	.pick_date_time .form-check {
+    width: 288px;
+}
+.landing_page_section button.navbar-toggler{
+		top: -70px;
+	}
+	.extra_nav{
+		margin-right: 0px;
+	}
+}
+@media screen and (max-width: 339px){
+	.compare_lab_box .report_prize{
+		top: 200px;
+	}
+	.call_us{
+		font-size: 18px;
+	}
+	.number{
+		font-size: 22px;
+	}
+}
